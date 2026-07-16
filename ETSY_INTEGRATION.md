@@ -7,15 +7,18 @@ Etsy als Test-Launch-Plattform, EU-weiter Versand, mit ehrlicher (nicht-manipula
 
 ---
 
-## 🎯 Kernstrategie in Kürze (verbindlich, aus Strategieanalyse)
+## 🎯 Kernstrategie in Kürze
+
+> ⚠️ Preis- und Rechtszeilen wurden am 16.07.2026 direkt vom Nutzer präzisiert/entschieden – das überschreibt teilweise die ursprüngliche Strategieanalyse. Details siehe `CLAUDE.md`, Abschnitt "Aktuelle Entscheidungen".
 
 | Thema | Festgelegt | NICHT festgelegt / offen |
 |-------|-----------|---------------------------|
-| Preis | Korridor 150–220 €, dynamisch hochtesten bis leichter Wartevorlauf entsteht | Kein fixer Endpreis, keine 3 Fix-Pakete à 149/189/229 € |
+| Preis | **Niedriger Lockpreis-Einstieg**, der durch Personalisierungs-Aufpreise steigt (Entscheidung 16.07.2026 – deutlich niedriger als der frühere 189–219-€-Vorschlag aus der Strategieanalyse) | Konkrete Zahlen (Basispreis, Aufpreis-Staffelung) noch nicht festgelegt |
 | Gravurstil | Basis = Strichzeichnung (Name + Spruch), getestet & wirtschaftlich | Fotorealistische Gravur = mögliches späteres Premium-Upgrade, noch nicht getestet |
 | Versandzeit | **1–3 Tage Versandbereitschaft** (Rohlinge vorproduziert, Gravur nach Bestellung) | — |
-| Verfügbarkeit | Ehrliche Angabe (aktuell 5 Rohlinge) | Keine künstliche Verknappung, keine Fake-Rabatte |
-| Rechtsform | Verkauf über bestehende Firma des Vaters | Eigenes Gewerbe/KU-ID erst bei nachgewiesenem Erfolg |
+| Verfügbarkeit | Ehrliche Angabe (aktuell 5 Rohlinge), keine Fake-Verknappung | Rabatte/Warenkorb-Zähler nicht kategorisch entschieden |
+| Rechtsform | Verkauf über bestehende Firma des Vaters; KU-ID **erst nach** Leons eigenem Gewerbe (entschieden 16.07.2026) | Zeitpunkt für Leons eigenes Gewerbe selbst |
+| Website | **Erst nach** Etsy-Testphase (entschieden 16.07.2026, nicht parallel) | Domain-Name (z. B. "bischofholz.de" vs. eigene Marke) |
 | Region | EU-weit ab Tag 1 | Werbefokus DACH+Benelux+FR+Nordics |
 | Beobachtungszeitraum | 60–90 Tage | — |
 | Erfolgsmetrik | Trichter-Kennzahlen (Impressionen, Klickrate, Favoriten) | Nicht rohe Verkaufszahlen |
@@ -49,23 +52,26 @@ Etsy als Test-Launch-Plattform, EU-weiter Versand, mit ehrlicher (nicht-manipula
 - **Verarbeitungszeit im Listing:** 1–3 Tage angeben (echter Wettbewerbsvorteil gegenüber Konkurrenz mit Wochen-Lieferzeiten) – **nicht** 2–4 Wochen
 
 ### 2.2 Listing-Struktur
-Ob 1 Listing mit Personalisierungsoptionen oder mehrere Listings sinnvoller ist, ist noch nicht entschieden. Strategieanalyse schlägt **2–3 gebündelte Pakete statt Einzel-Zuschlagsliste** vor (reduziert Entscheidungsmüdigkeit bei Trauerkäufern, erhöht durchschnittlichen Bestellwert), aber **ohne konkrete Preise/Namen festzulegen** – das ist ein strukturelles Prinzip, keine fertige Paketliste.
+Ob 1 Listing mit Personalisierungsoptionen oder mehrere Listings sinnvoller ist, ist noch nicht entschieden.
 
-**Vorschlag für Struktur (Preise offen, iterativ testen):**
-- Basis-Paket: Strichzeichnung-Gravur, Name + Datum
-- Mittleres Paket: + individueller Spruch
-- ggf. drittes Paket erst nach Validierung des fotorealistischen Gravurstils ergänzen
+Strategieanalyse schlug ursprünglich **2–3 gebündelte Pakete statt Einzel-Zuschlagsliste** vor (reduziert Entscheidungsmüdigkeit, erhöht durchschnittlichen Bestellwert). ⚠️ Das steht in einer gewissen Spannung zur neueren Preis-Entscheidung (niedriger Lockpreis-Einstieg + Personalisierungs-Aufpreise, siehe oben) – ein Lockpreis-Modell funktioniert eher über **einzelne Aufpreis-Optionen auf einem günstigen Basis-Listing** als über 2–3 fertig geschnürte Pakete mit jeweils höherem Startpreis. Diese Struktur-Frage ist noch nicht final entschieden und sollte vor dem Listing-Aufbau geklärt werden.
+
+**Möglicher Aufbau (Namen/Preise offen, iterativ testen):**
+- Günstiger Basispreis für das Grund-Listing (Strichzeichnung-Gravur, Name)
+- Aufpreis-Optionen: individueller Spruch, zweite Gravurzeile o. ä.
+- ggf. Premium-Option erst nach Validierung des fotorealistischen Gravurstils ergänzen
 
 **Tags (Vorschlag, unverändert sinnvoll):** `holz-tierurne`, `personalisiert`, `lasergravur`, `haustier-gedenken`, `gedenkurne`, `urne-hund`, `urne-katze`
 
-### 2.3 Positionierung im Listing-Text (verbindliches Prinzip, präzisiert 16.07.2026)
+### 2.3 Positionierung im Listing-Text (präzisiert 16.07.2026)
 Recherchiert bei Etsy-Bestsellern wie PiecesOfHearts: künstliche Rabatte (30–50 %), Fake-Verknappung ("nur noch 2 Stück"), Warenkorb-Zähler ("bereits in 20+ Warenkörben"), Lockpreise die nach Personalisierung stark steigen.
 
-**Wichtige Präzisierung:** Das ist **keine pauschale Absage an alle vier Taktiken**, sondern nur an eine:
-- ❌ **Fake-Verknappung ist der einzige echte Sonderfall** – wird nicht gebraucht, weil die reale Verfügbarkeit (aktuell 5 Rohlinge) ohnehin schon niedrig ist. Ehrlichkeit ergibt sich hier automatisch aus der Realität, nichts muss vorgetäuscht werden.
-- ⚪ Rabatte, Warenkorb-Zähler, Lockpreise: **nicht** kategorisch ausgeschlossen, aber auch (noch) keine bewusste Entscheidung dafür – bislang schlicht nicht Teil der Strategie.
+**Das ist keine pauschale Absage an alle vier Taktiken:**
+- ❌ **Fake-Verknappung ist der einzige klar ausgeschlossene Fall** – wird nicht gebraucht, weil die reale Verfügbarkeit (aktuell 5 Rohlinge) ohnehin schon niedrig ist. Ehrlichkeit ergibt sich hier automatisch aus der Realität, nichts muss vorgetäuscht werden.
+- ✅ **Lockpreis-Modell (niedriger Basispreis, steigt mit Personalisierung): wird aktiv genutzt** (Entscheidung 16.07.2026) – ursprünglich nur als beobachtete Konkurrenztaktik recherchiert, jetzt bewusst als eigene Preisstruktur übernommen. Im Listing-Text entsprechend transparent kommunizieren (Basispreis + klar ausgewiesene Aufpreise, damit es nicht als versteckte Kostenfalle wirkt).
+- ⚪ Rabatte, Warenkorb-Zähler: weiterhin **nicht** kategorisch entschieden – bislang schlicht nicht Teil der Strategie.
 
-**Stattdessen im Vordergrund:** Echte Verfügbarkeitsangabe + echte Vorteile (1–3 Tage Versand, persönliche Vorschau, echte Handwerksgeschichte). Ob zusätzlich Rabatte o. ä. sinnvoll sind, ist eine offene, noch nicht getroffene Entscheidung – kein Tabu.
+**Stattdessen im Vordergrund:** Echte Verfügbarkeitsangabe + echte Vorteile (1–3 Tage Versand, persönliche Vorschau, echte Handwerksgeschichte) – auch beim Lockpreis-Modell nicht durch übertriebene Dringlichkeits-Sprache ersetzen.
 
 ---
 
@@ -140,17 +146,22 @@ Einfaches Tracking (z. B. Tabelle) reicht in der Testphase – kein Automatisier
 | **Gesamt (ohne Offsite Ads)** | **~12–17 % vom Bruttopreis** |
 | Offsite Ads (ab ~10.000 $ Jahresumsatz Pflicht) | +12–15 % pro so generiertem Verkauf |
 
-Bei 50 € Materialkosten/Stück und angenommenen ~189 € Verkaufspreis: grober Rohertrag ~120–135 € pro Stück vor Versand, Verpackung, Arbeitszeit. **Noch zu klären:** ob aufwendigere Gravur (falls fotorealistisch später ergänzt) die Fertigungszeit und damit die reale monatliche Kapazität senkt.
+⚠️ **Diese Rechnung ist veraltet:** Sie ging von ~189 € Verkaufspreis aus (grober Rohertrag ~120–135 € pro Stück vor Versand/Verpackung/Arbeitszeit). Seit der Entscheidung für ein Lockpreis-Modell mit deutlich niedrigerem Einstiegspreis (16.07.2026) ist unklar, wie sich Basispreis + Aufpreise auf den durchschnittlichen Bestellwert und damit die Marge auswirken – **muss neu durchgerechnet werden, sobald konkrete Zahlen (Basispreis, Aufpreis-Staffelung) feststehen.** Die 50-€-Materialkosten und die Etsy-Gebührenstruktur oben bleiben unverändert gültig.
+
+**Noch zu klären:** ob aufwendigere Gravur (falls fotorealistisch später ergänzt) die Fertigungszeit und damit die reale monatliche Kapazität senkt.
 
 ---
 
 ## ⚠️ Offene Punkte / noch zu klären
 
 1. **Shopname/Markentrennung** – eigene Marke für Tierurnen vs. unter Vaters bestehendem Namen
-2. **Konkrete Verpackungs-/Versandkosten** national vs. EU (für saubere Deckungsbeitragsrechnung)
-3. **Fertigungszeit pro Stück** beim Vater erfragen (beeinflusst reale Kapazität)
-4. **KU-ID-Registrierung** – erst relevant, wenn eigenes Gewerbe/Erfolg nachgewiesen; mit Steuerberater abklären, insbesondere Abgrenzung zu Vaters Betrieb
-5. **Landing Page inhaltlich korrigieren**, bevor sie parallel zu Etsy verlinkt wird (siehe `CLAUDE.md`)
+2. **Konkrete Preis-Zahlen für das Lockpreis-Modell** – Basispreis, Aufpreis-Staffelung für Personalisierung (Entscheidung für das Modell steht, konkrete Zahlen noch nicht)
+3. **Konkrete Verpackungs-/Versandkosten** national vs. EU (für saubere Deckungsbeitragsrechnung, muss mit neuen Preiszahlen neu gerechnet werden)
+4. **Fertigungszeit pro Stück** beim Vater erfragen (beeinflusst reale Kapazität)
+5. **Domain-Name für spätere eigene Website** – "bischofholz.de" vs. eigenständige Marke (relevant erst nach Etsy-Testphase)
+6. **Landing Page inhaltlich korrigieren**, bevor sie parallel zu Etsy verlinkt wird (siehe `CLAUDE.md`)
+
+*(KU-ID-Timing und Zeitpunkt der eigenen Website sind bereits entschieden, siehe Tabelle oben und `CLAUDE.md`.)*
 
 ---
 
@@ -168,5 +179,7 @@ Bei 50 € Materialkosten/Stück und angenommenen ~189 € Verkaufspreis: grober
 ---
 
 **Erstellt:** 12. Juli 2026
-**Überarbeitet:** 16. Juli 2026 – an Strategieanalyse/Projektstatus angeglichen, Fixpreise & falsche Lieferzeiten entfernt; Anti-Manipulation-Prinzip in 2.3 präzisiert (nur Fake-Verknappung ist ausgeschlossen, andere Taktiken sind nicht kategorisch entschieden)
-**Status:** Planung, vor Phase-1-Abschluss (Testgravur etc.)
+**Überarbeitet:** 16. Juli 2026 (zwei Durchgänge) –
+1. an Strategieanalyse/Projektstatus angeglichen, Fixpreise & falsche Lieferzeiten entfernt; Anti-Manipulation-Prinzip präzisiert (nur Fake-Verknappung ausgeschlossen)
+2. Nutzer-Entscheidungen eingearbeitet: KU-ID erst nach eigenem Gewerbe, Website erst nach Etsy, Domain offen, Lockpreis-Modell mit niedrigerem Einstiegspreis statt der 189–219-€-Empfehlung aus der Strategieanalyse
+**Status:** Planung, vor Phase-1-Abschluss (Testgravur etc.) – Preisstruktur (2.2) noch mit Basis-vs-Paket-Frage offen

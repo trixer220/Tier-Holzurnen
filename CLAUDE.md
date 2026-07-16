@@ -14,6 +14,19 @@ Dieses Projekt hat zwei Arten von Dokumenten mit **unterschiedlicher Verbindlich
 
 **Faustregel:** Landing-Page-Inhalte fließen **niemals** in Strategieanalyse/Projektstatus ein und werden nicht als Beleg für irgendeine Tatsachenbehauptung zum Geschäft verwendet – auch nicht auszugsweise oder "vorsichtig". Bei jedem Widerspruch gilt ausschließlich, was in Strategieanalyse/Projektstatus steht. Aus der Landing Page ist einzig ihre *Technik* (Mobile-Responsive, Formular-Backend, Header-Struktur) wiederverwendbar – ihr *Text* ist wertlos als Informationsquelle.
 
+**Präzisierung zur Beziehung Strategieanalyse ↔ Projektstatus (16.07.2026):** Die Strategieanalyse ist eine einmalige, statische Tiefenanalyse (Stand Juli 2026, nicht laufend gepflegt). Der Projektstatus wird demgegenüber laufend aktualisiert und nähert sich dem tatsächlichen, aktuellen Stand an. **Bei Widersprüchen zwischen beiden gewinnt tendenziell der aktuellere Projektstatus bzw. eine explizite neuere Entscheidung des Nutzers** – die Strategieanalyse bleibt trotzdem wertvoll als Begründungs-/Herleitungsgrundlage, ist aber im Zweifel die ältere, überholbare Quelle. Siehe Abschnitt "Aktuelle Entscheidungen" unten für Fälle, in denen das bereits passiert ist.
+
+---
+
+## ✅ Aktuelle Entscheidungen des Nutzers (16.07.2026 – überschreiben ältere Dokumente)
+
+Diese vier Punkte wurden direkt in dieser Session entschieden/präzisiert und stehen noch in **keinem** der beiden Quelldokumente. Sie gelten trotzdem als aktuellster Stand, bis sie in Projektstatus/Strategieanalyse selbst nachgezogen werden:
+
+1. **KU-ID:** Entschieden – erst **nach** Gründung von Leons eigenem Gewerbe, nicht vorher/unabhängig davon. Löst die zuvor offengelegte Spannung zur Strategieanalyse ("frühzeitig beantragen") auf: Projektstatus-Linie gewinnt.
+2. **Eigene Website:** Entschieden – **nach** der Etsy-Testphase, nicht parallel von Anfang an. Löst die Spannung zur Strategieanalyse ("paralleler Kanal von Anfang an") auf: Projektstatus-Linie gewinnt.
+3. **Domain-Name:** Weiterhin **offen** – "bischofholz.de" (aus Projektstatus) vs. eigenständiger Markenname (Markentrennungs-Empfehlung aus Strategieanalyse) ist noch nicht entschieden.
+4. **Test-Einstiegspreis:** Liegt **deutlich niedriger** als der zuvor dokumentierte 189–219-€-Vorschlag aus der Strategieanalyse. Das Preismodell folgt eher einer "Lockpreis"-Logik: niedriger, attraktiver Einstiegspreis, der durch Personalisierungs-/Gravur-Aufpreise spürbar steigt. ⚠️ Das ist bemerkenswert, weil genau diese Taktik ("Lockpreise ab ~30 €, die nach Personalisierung auf 100–175 € steigen") in Strategieanalyse/Projektstatus ursprünglich als **beobachtete Konkurrenztaktik** eingeordnet wurde – nicht als eigene Strategie. Diese Neuausrichtung ist eine bewusste Kursänderung, kein Auslesefehler meinerseits.
+
 ---
 
 ## 🎯 Projektübersicht
@@ -28,9 +41,8 @@ Dieses Projekt hat zwei Arten von Dokumenten mit **unterschiedlicher Verbindlich
 
 ## 💰 Preis- & Geschäftslogik (verbindlich, aus Strategieanalyse)
 
-- **Kein fixer Zielpreis.** Preiskorridor 150–220 €, Strategie: Preis so lange schrittweise anheben, bis sich ein leichter Wartevorlauf (1–3 Wochen) bildet. Ziel ist **Preis-Maximierung, nicht Stückzahl-Maximierung**.
-  → Die auf der Landing Page verwendeten fixen Paketpreise (149 € / 189 € / 229 €) sind ein **Platzhalter aus dem alten Plan**, keine finale Entscheidung.
-  → Strategieanalyse nennt einen **konkreten Test-Einstiegspreis-Vorschlag von 189–219 €** (oberhalb der gefundenen 169-€-Marktvergleichsgröße, da die eigene Personalisierung aufwendiger ist als die übliche Pfoten-Gravur der Konkurrenz) – als sinnvoller Startpunkt fürs Hochtesten, **keine endgültige Festlegung**.
+- **Kein fixer Zielpreis** im ursprünglichen Sinn der Strategieanalyse (Preiskorridor 150–220 €, schrittweise anheben bis leichter Wartevorlauf). **Überholt durch aktuelle Entscheidung (siehe oben):** Der tatsächliche Test-Einstiegspreis liegt deutlich niedriger als die dort vorgeschlagenen 189–219 € – Modell ist eher ein niedriger Basispreis, der durch Personalisierungs-Aufpreise steigt (siehe "Aktuelle Entscheidungen" oben).
+  → Die auf der Landing Page verwendeten fixen Paketpreise (149 € / 189 € / 229 €) sind weiterhin ein **Platzhalter aus dem alten, unabhängigen ChatGPT-Plan**, keine Grundlage für irgendeine der beiden obigen Preislogiken.
 - **Kapazität:** 30 Urnen/Monat als angenommene Obergrenze (aus altem Plan übernommen, in Strategieanalyse als Rahmenbedingung akzeptiert – ökonomisch aber fast irrelevant, solange Nachfrage darunterliegt).
 - **Aktueller Lagerstand:** ~5 vorproduzierte, unbearbeitete Rohlinge. Gravur erfolgt erst nach Bestellung. Verfügbarkeitsangabe im Etsy-Listing = echte Stückzahl (aktuell 5), **keine künstliche Verknappung**.
 - **Stückkosten:** 50 € Materialkosten pro Urne (Zahlung an den Vater).
@@ -43,8 +55,9 @@ Dieses Projekt hat zwei Arten von Dokumenten mit **unterschiedlicher Verbindlich
 Recherchiert bei Etsy-Bestsellern wie PiecesOfHearts: künstliche Rabatte 30–50 %, Fake-Verknappung ("nur noch 2 Stück"), Warenkorb-Zähler, Lockpreise ab ~30 € die nach Personalisierung auf 100–175 € steigen.
 
 **Präzisierung (16.07.2026):** Nicht alle diese Taktiken sind grundsätzlich kategorisch ausgeschlossen – nur **Fake-Verknappung ist ein klarer Sonderfall**: Sie wird schlicht nicht gebraucht, weil die echte Verfügbarkeit (aktuell 5 Rohlinge) ohnehin schon niedrig ist. Die Ehrlichkeit ergibt sich hier automatisch aus der Realität, es muss nichts vorgetäuscht werden – **nicht** weil Verknappungshinweise grundsätzlich verboten wären, sondern weil sie hier schlicht überflüssig sind.
-- Rabatte, Warenkorb-Zähler, Lockpreise etc.: **nicht** kategorisch entschieden/ausgeschlossen – bislang schlicht nicht Teil der Strategie, aber auch keine bewusste Absage.
-- Fest steht nur: **keine künstliche/erfundene Verknappung**, weil sie hier gegenüber der ehrlichen Angabe keinen Mehrwert hätte.
+- Fest steht: **keine künstliche/erfundene Verknappung**, weil sie hier gegenüber der ehrlichen Angabe keinen Mehrwert hätte.
+- Rabatte, Warenkorb-Zähler: weiterhin **nicht** kategorisch entschieden/ausgeschlossen – bislang schlicht nicht Teil der Strategie.
+- **Lockpreise-Modell (niedriger Basispreis, steigt mit Personalisierung): Wird aktiv genutzt** (Entscheidung 16.07.2026, siehe "Aktuelle Entscheidungen" oben) – ursprünglich nur als beobachtete Konkurrenztaktik recherchiert, jetzt bewusst als eigene Preisstruktur übernommen.
 - Passt insgesamt zur Positionierung als "würdevolles, vertrauensbasiertes Erinnerungsprodukt": Vertrauen über echte Vorteile statt Kaufdruck aufbauen.
 
 **Echte (nicht-manipulative) Wettbewerbsvorteile, die aktiv kommuniziert werden sollen:**
@@ -77,7 +90,7 @@ Recherchiert bei Etsy-Bestsellern wie PiecesOfHearts: künstliche Rabatte 30–5
 - ⚠️ Realistischer Jahresumsatz bei Erfolg (30.000–65.000 €) reißt die 25.000-€-Grenze ohnehin – Kleinunternehmerstatus geht dann im 2. Jahr automatisch verloren, unabhängig von der Geografie.
 - **Unbedingt mit Steuerberater final abklären**, besonders zur Abgrenzung zwischen Vaters bestehendem Betrieb und Leons eigenem Verkaufsanteil.
 
-⚠️ **Spannung zwischen den beiden Quelldokumenten selbst (nicht von mir aufgelöst, sondern hier bewusst offengelegt):** Die Strategieanalyse empfiehlt explizit, die KU-ID **frühzeitig** zu beantragen ("statt die Steuerfrage erst bei Überschreiten einer Schwelle anzugehen"). Der spätere Projektstatus formuliert dieselbe Frage vorsichtiger als "offen für später (falls Erfolg)". Beides lässt sich damit erklären, dass eine KU-ID erst nach Gründung eines eigenen Gewerbes von Leon möglich ist (aktuell läuft alles über die Firma des Vaters) – die Dringlichkeit hängt also auch davon ab, wann dieses eigene Gewerbe angegangen wird. **Diese Priorisierung ist noch nicht final geklärt und sollte mit Steuerberater + zwischen Vater und Leon besprochen werden**, bevor eine neue Session hier eine Annahme trifft.
+✅ **Entschieden (16.07.2026):** KU-ID erst **nach** Gründung von Leons eigenem Gewerbe, nicht vorher/unabhängig davon. Die Strategieanalyse empfahl ursprünglich, die KU-ID "frühzeitig" zu beantragen – diese Empfehlung ist damit überholt, der Projektstatus-Linie ("offen für später") folgt die tatsächliche Priorisierung. Trotzdem unbedingt mit Steuerberater final abklären, sobald das eigene Gewerbe ansteht.
 
 → **Die Landing Page enthält im Footer aktuell einen Kleinunternehmer-Steuerhinweis unter "Harald Bischoff" als eigenständigem Unternehmer** – das widerspricht der aktuellen Struktur (Verkauf läuft über Vaters bestehende Firma). Muss vor Launch korrigiert oder mit dem tatsächlichen Firmennamen/Inhaber abgeglichen werden.
 
@@ -89,12 +102,12 @@ Recherchiert bei Etsy-Bestsellern wie PiecesOfHearts: künstliche Rabatte 30–5
 - **Werbefokus:** DACH + Benelux + Frankreich + Nordics (Kulturen mit "Haustier als Familienmitglied"); Süd-/Osteuropa nicht aktiv bewerben, aber über Etsy-Suche sichtbar lassen
 - **Beobachtungszeitraum:** 60–90 Tage (nicht 30 – neue Etsy-Shops haben in den ersten Wochen kaum organische Sichtbarkeit, Trauerkäufe sind oft nicht impulsiv)
 - **Erfolgsmetrik:** Trichter-Kennzahlen (Impressionen, Klickrate, Anteil Favoriten) statt roher Verkaufszahlen – bei so kleinen Stückzahlen sind 1–3 Verkäufe/Monat kaum von Zufall zu unterscheiden
-- **Ergänzender Kanal (parallel zu Etsy):** Partnerschaften mit lokalen Tierarztpraxen/Tierkrematorien (warme, akute Nachfrage) + schlanke eigene Ein-Seiten-Website als gebührenfreier Kanal
+- **Ergänzender Kanal:** Partnerschaften mit lokalen Tierarztpraxen/Tierkrematorien (warme, akute Nachfrage)
 - **Amazon Handmade:** explizit nicht empfohlen (Käuferschaft passt nicht zur emotionalen/handwerklichen Positionierung)
 
-⚠️ **Zwei kleinere, noch nicht aufgelöste Spannungen zwischen den Quelldokumenten:**
-1. **Zeitpunkt eigene Website:** Strategieanalyse schlägt die eigene Ein-Seiten-Website als **parallelen** Kanal von Anfang an vor (Teil des Kanal-Mix neben Etsy). Projektstatus formuliert sie dagegen als "Perspektivisch: **Nach** Etsy-Testphase". Noch nicht geklärt, welche Reihenfolge tatsächlich gilt.
-2. **Domain-Name:** Projektstatus nennt als Beispiel für diese künftige Website konkret "**bischofholz.de**" – das würde stark an den Familiennamen/Vaters Firma anknüpfen. Das steht in einer gewissen Spannung zur in der Strategieanalyse empfohlenen **Markentrennung** (eigener, klar abgegrenzter Markenauftritt für die Tierurnen-Linie, siehe oben) – noch nicht final entschieden.
+✅ **Entschieden (16.07.2026):** Eigene Ein-Seiten-Website kommt **nach** der Etsy-Testphase, nicht parallel von Anfang an. Die Strategieanalyse hatte ursprünglich einen parallelen Start vorgeschlagen – überholt, Projektstatus-Linie gilt.
+
+⚠️ **Weiterhin offen:** **Domain-Name** für diese künftige Website. Projektstatus nennt als Beispiel "**bischofholz.de**" – das würde stark an den Familiennamen/Vaters Firma anknüpfen und steht in einer gewissen Spannung zur in der Strategieanalyse empfohlenen **Markentrennung** (eigener, klar abgegrenzter Markenauftritt für die Tierurnen-Linie, siehe oben). Noch nicht final entschieden, erst relevant wenn Website-Phase ansteht.
 
 ---
 
@@ -170,4 +183,4 @@ Diese Punkte sind keine "mit Vorsicht zu genießenden" Altlasten, sondern schlic
 
 **Zuletzt aktualisiert:** 16. Juli 2026
 **Von:** Claude (Sonnet 5)
-**Status:** Strategie-Dokumente ins Repo integriert, Landing Page als "Testlauf, inhaltlich zu überarbeiten" markiert. Anti-Manipulation-Prinzip präzisiert (nur Fake-Verknappung ausgeschlossen, nicht alle Taktiken). Drei weitere kleinere Spannungen zwischen Strategieanalyse/Projektstatus offengelegt (KU-ID-Timing, Website-Zeitpunkt, Domain-Name vs. Markentrennung).
+**Status:** Strategie-Dokumente ins Repo integriert, Landing Page als "Testlauf, inhaltlich zu überarbeiten" markiert. Anti-Manipulation-Prinzip präzisiert. Vier offene Spannungen zwischen Strategieanalyse/Projektstatus durch direkte Nutzer-Entscheidung aufgelöst: KU-ID erst nach eigenem Gewerbe, Website erst nach Etsy, Test-Einstiegspreis deutlich niedriger (Lockpreis-Modell statt 189–219 €). Nur Domain-Name bleibt offen. Diese Entscheidungen stehen noch in keinem der Quelldokumente selbst, gelten hier aber als aktuellster Stand.
