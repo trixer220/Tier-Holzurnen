@@ -30,6 +30,7 @@ Dieses Projekt hat zwei Arten von Dokumenten mit **unterschiedlicher Verbindlich
 
 - **Kein fixer Zielpreis.** Preiskorridor 150–220 €, Strategie: Preis so lange schrittweise anheben, bis sich ein leichter Wartevorlauf (1–3 Wochen) bildet. Ziel ist **Preis-Maximierung, nicht Stückzahl-Maximierung**.
   → Die auf der Landing Page verwendeten fixen Paketpreise (149 € / 189 € / 229 €) sind ein **Platzhalter aus dem alten Plan**, keine finale Entscheidung.
+  → Strategieanalyse nennt einen **konkreten Test-Einstiegspreis-Vorschlag von 189–219 €** (oberhalb der gefundenen 169-€-Marktvergleichsgröße, da die eigene Personalisierung aufwendiger ist als die übliche Pfoten-Gravur der Konkurrenz) – als sinnvoller Startpunkt fürs Hochtesten, **keine endgültige Festlegung**.
 - **Kapazität:** 30 Urnen/Monat als angenommene Obergrenze (aus altem Plan übernommen, in Strategieanalyse als Rahmenbedingung akzeptiert – ökonomisch aber fast irrelevant, solange Nachfrage darunterliegt).
 - **Aktueller Lagerstand:** ~5 vorproduzierte, unbearbeitete Rohlinge. Gravur erfolgt erst nach Bestellung. Verfügbarkeitsangabe im Etsy-Listing = echte Stückzahl (aktuell 5), **keine künstliche Verknappung**.
 - **Stückkosten:** 50 € Materialkosten pro Urne (Zahlung an den Vater).
@@ -39,10 +40,12 @@ Dieses Projekt hat zwei Arten von Dokumenten mit **unterschiedlicher Verbindlich
 
 ## 🧭 Positionierung & Anti-Manipulation-Prinzip (verbindlich)
 
-**Bewusste Entscheidung GEGEN gängige Etsy-Verkaufstricks** (recherchiert bei Bestsellern wie PiecesOfHearts: künstliche Rabatte 30–50 %, Fake-Verknappung "nur noch 2 Stück", Warenkorb-Zähler, Lockpreise ab ~30 € die nach Personalisierung auf 100–175 € steigen):
+Recherchiert bei Etsy-Bestsellern wie PiecesOfHearts: künstliche Rabatte 30–50 %, Fake-Verknappung ("nur noch 2 Stück"), Warenkorb-Zähler, Lockpreise ab ~30 € die nach Personalisierung auf 100–175 € steigen.
 
-- Passt nicht zur Positionierung als "würdevolles, vertrauensbasiertes Erinnerungsprodukt"
-- Stattdessen: **ehrliche Verfügbarkeitsangabe**, Vertrauen über echte Vorteile statt Kaufdruck
+**Präzisierung (16.07.2026):** Nicht alle diese Taktiken sind grundsätzlich kategorisch ausgeschlossen – nur **Fake-Verknappung ist ein klarer Sonderfall**: Sie wird schlicht nicht gebraucht, weil die echte Verfügbarkeit (aktuell 5 Rohlinge) ohnehin schon niedrig ist. Die Ehrlichkeit ergibt sich hier automatisch aus der Realität, es muss nichts vorgetäuscht werden – **nicht** weil Verknappungshinweise grundsätzlich verboten wären, sondern weil sie hier schlicht überflüssig sind.
+- Rabatte, Warenkorb-Zähler, Lockpreise etc.: **nicht** kategorisch entschieden/ausgeschlossen – bislang schlicht nicht Teil der Strategie, aber auch keine bewusste Absage.
+- Fest steht nur: **keine künstliche/erfundene Verknappung**, weil sie hier gegenüber der ehrlichen Angabe keinen Mehrwert hätte.
+- Passt insgesamt zur Positionierung als "würdevolles, vertrauensbasiertes Erinnerungsprodukt": Vertrauen über echte Vorteile statt Kaufdruck aufbauen.
 
 **Echte (nicht-manipulative) Wettbewerbsvorteile, die aktiv kommuniziert werden sollen:**
 1. **Versandbereitschaft 1–3 Tage** – Etsy-Filter, den viele Konkurrenten (Übersee-Versand, lange Lieferzeiten) nicht erfüllen; machbar, weil Rohlinge vorproduziert sind
@@ -74,6 +77,8 @@ Dieses Projekt hat zwei Arten von Dokumenten mit **unterschiedlicher Verbindlich
 - ⚠️ Realistischer Jahresumsatz bei Erfolg (30.000–65.000 €) reißt die 25.000-€-Grenze ohnehin – Kleinunternehmerstatus geht dann im 2. Jahr automatisch verloren, unabhängig von der Geografie.
 - **Unbedingt mit Steuerberater final abklären**, besonders zur Abgrenzung zwischen Vaters bestehendem Betrieb und Leons eigenem Verkaufsanteil.
 
+⚠️ **Spannung zwischen den beiden Quelldokumenten selbst (nicht von mir aufgelöst, sondern hier bewusst offengelegt):** Die Strategieanalyse empfiehlt explizit, die KU-ID **frühzeitig** zu beantragen ("statt die Steuerfrage erst bei Überschreiten einer Schwelle anzugehen"). Der spätere Projektstatus formuliert dieselbe Frage vorsichtiger als "offen für später (falls Erfolg)". Beides lässt sich damit erklären, dass eine KU-ID erst nach Gründung eines eigenen Gewerbes von Leon möglich ist (aktuell läuft alles über die Firma des Vaters) – die Dringlichkeit hängt also auch davon ab, wann dieses eigene Gewerbe angegangen wird. **Diese Priorisierung ist noch nicht final geklärt und sollte mit Steuerberater + zwischen Vater und Leon besprochen werden**, bevor eine neue Session hier eine Annahme trifft.
+
 → **Die Landing Page enthält im Footer aktuell einen Kleinunternehmer-Steuerhinweis unter "Harald Bischoff" als eigenständigem Unternehmer** – das widerspricht der aktuellen Struktur (Verkauf läuft über Vaters bestehende Firma). Muss vor Launch korrigiert oder mit dem tatsächlichen Firmennamen/Inhaber abgeglichen werden.
 
 ---
@@ -86,6 +91,10 @@ Dieses Projekt hat zwei Arten von Dokumenten mit **unterschiedlicher Verbindlich
 - **Erfolgsmetrik:** Trichter-Kennzahlen (Impressionen, Klickrate, Anteil Favoriten) statt roher Verkaufszahlen – bei so kleinen Stückzahlen sind 1–3 Verkäufe/Monat kaum von Zufall zu unterscheiden
 - **Ergänzender Kanal (parallel zu Etsy):** Partnerschaften mit lokalen Tierarztpraxen/Tierkrematorien (warme, akute Nachfrage) + schlanke eigene Ein-Seiten-Website als gebührenfreier Kanal
 - **Amazon Handmade:** explizit nicht empfohlen (Käuferschaft passt nicht zur emotionalen/handwerklichen Positionierung)
+
+⚠️ **Zwei kleinere, noch nicht aufgelöste Spannungen zwischen den Quelldokumenten:**
+1. **Zeitpunkt eigene Website:** Strategieanalyse schlägt die eigene Ein-Seiten-Website als **parallelen** Kanal von Anfang an vor (Teil des Kanal-Mix neben Etsy). Projektstatus formuliert sie dagegen als "Perspektivisch: **Nach** Etsy-Testphase". Noch nicht geklärt, welche Reihenfolge tatsächlich gilt.
+2. **Domain-Name:** Projektstatus nennt als Beispiel für diese künftige Website konkret "**bischofholz.de**" – das würde stark an den Familiennamen/Vaters Firma anknüpfen. Das steht in einer gewissen Spannung zur in der Strategieanalyse empfohlenen **Markentrennung** (eigener, klar abgegrenzter Markenauftritt für die Tierurnen-Linie, siehe oben) – noch nicht final entschieden.
 
 ---
 
@@ -161,4 +170,4 @@ Diese Punkte sind keine "mit Vorsicht zu genießenden" Altlasten, sondern schlic
 
 **Zuletzt aktualisiert:** 16. Juli 2026
 **Von:** Claude (Sonnet 5)
-**Status:** Strategie-Dokumente ins Repo integriert, Landing Page als "Testlauf, inhaltlich zu überarbeiten" markiert
+**Status:** Strategie-Dokumente ins Repo integriert, Landing Page als "Testlauf, inhaltlich zu überarbeiten" markiert. Anti-Manipulation-Prinzip präzisiert (nur Fake-Verknappung ausgeschlossen, nicht alle Taktiken). Drei weitere kleinere Spannungen zwischen Strategieanalyse/Projektstatus offengelegt (KU-ID-Timing, Website-Zeitpunkt, Domain-Name vs. Markentrennung).

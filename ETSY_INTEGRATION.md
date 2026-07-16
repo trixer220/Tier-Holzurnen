@@ -58,14 +58,14 @@ Ob 1 Listing mit Personalisierungsoptionen oder mehrere Listings sinnvoller ist,
 
 **Tags (Vorschlag, unverändert sinnvoll):** `holz-tierurne`, `personalisiert`, `lasergravur`, `haustier-gedenken`, `gedenkurne`, `urne-hund`, `urne-katze`
 
-### 2.3 Positionierung im Listing-Text (verbindliches Prinzip)
-**Bewusst KEINE dieser Etsy-Bestseller-Taktiken verwenden** (recherchiert bei PiecesOfHearts u. a.):
-- ❌ Künstliche Rabatte (30–50 %)
-- ❌ Fake-Verknappung ("nur noch 2 Stück" wenn nicht wahr)
-- ❌ Warenkorb-Zähler ("bereits in 20+ Warenkörben")
-- ❌ Lockpreise, die erst nach Personalisierung stark steigen
+### 2.3 Positionierung im Listing-Text (verbindliches Prinzip, präzisiert 16.07.2026)
+Recherchiert bei Etsy-Bestsellern wie PiecesOfHearts: künstliche Rabatte (30–50 %), Fake-Verknappung ("nur noch 2 Stück"), Warenkorb-Zähler ("bereits in 20+ Warenkörben"), Lockpreise die nach Personalisierung stark steigen.
 
-**Stattdessen:** Ehrliche Verfügbarkeit, echte Vorteile (1–3 Tage Versand, persönliche Vorschau, echte Handwerksgeschichte) in den Vordergrund stellen.
+**Wichtige Präzisierung:** Das ist **keine pauschale Absage an alle vier Taktiken**, sondern nur an eine:
+- ❌ **Fake-Verknappung ist der einzige echte Sonderfall** – wird nicht gebraucht, weil die reale Verfügbarkeit (aktuell 5 Rohlinge) ohnehin schon niedrig ist. Ehrlichkeit ergibt sich hier automatisch aus der Realität, nichts muss vorgetäuscht werden.
+- ⚪ Rabatte, Warenkorb-Zähler, Lockpreise: **nicht** kategorisch ausgeschlossen, aber auch (noch) keine bewusste Entscheidung dafür – bislang schlicht nicht Teil der Strategie.
+
+**Stattdessen im Vordergrund:** Echte Verfügbarkeitsangabe + echte Vorteile (1–3 Tage Versand, persönliche Vorschau, echte Handwerksgeschichte). Ob zusätzlich Rabatte o. ä. sinnvoll sind, ist eine offene, noch nicht getroffene Entscheidung – kein Tabu.
 
 ---
 
@@ -168,5 +168,5 @@ Bei 50 € Materialkosten/Stück und angenommenen ~189 € Verkaufspreis: grober
 ---
 
 **Erstellt:** 12. Juli 2026
-**Überarbeitet:** 16. Juli 2026 – an Strategieanalyse/Projektstatus angeglichen, Fixpreise & falsche Lieferzeiten entfernt
+**Überarbeitet:** 16. Juli 2026 – an Strategieanalyse/Projektstatus angeglichen, Fixpreise & falsche Lieferzeiten entfernt; Anti-Manipulation-Prinzip in 2.3 präzisiert (nur Fake-Verknappung ist ausgeschlossen, andere Taktiken sind nicht kategorisch entschieden)
 **Status:** Planung, vor Phase-1-Abschluss (Testgravur etc.)
