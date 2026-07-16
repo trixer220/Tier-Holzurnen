@@ -191,10 +191,11 @@
         .nav-inner {
             max-width: var(--max-w);
             margin: 0 auto;
-            padding: 14px 24px;
+            padding: 10px 24px;
             display: flex;
             align-items: center;
             justify-content: space-between;
+            gap: 20px;
         }
         .logo {
             display: flex;
@@ -204,9 +205,16 @@
             color: var(--dark-brown);
             text-decoration: none;
             font-weight: bold;
+            flex-shrink: 0;
         }
         .logo span { color: var(--wood-gold); }
-        .logo-img { height: 95px; width: auto; display: block; }
+        .logo-img { height: 100px; width: auto; display: block; }
+
+        /* Desktop nav (visible ≥ 921px) */
+        .main-nav {
+            display: flex;
+            align-items: center;
+        }
         .main-nav a {
             text-decoration: none;
             font-size: 1.08rem;
@@ -215,6 +223,7 @@
             margin-left: 34px;
             padding: 14px 0;
             transition: color .2s;
+            white-space: nowrap;
         }
         .main-nav a:hover { color: var(--wood-gold); }
         .main-nav .nav-cta {
@@ -228,15 +237,16 @@
         }
         .main-nav .nav-cta:hover { background: var(--dark-brown); color: #fff; }
 
-        /* Mobile hamburger */
+        /* Mobile hamburger — hidden on desktop */
         .nav-burger {
             display: none;
             flex-direction: column;
             gap: 5px;
             cursor: pointer;
-            padding: 4px;
+            padding: 8px;
             background: none;
             border: none;
+            flex-shrink: 0;
         }
         .nav-burger span {
             display: block;
@@ -246,7 +256,54 @@
             transition: all .3s;
             border-radius: 2px;
         }
-        .nav-close-btn { display: none; }
+
+        /* Mobile nav overlay panel — lives OUTSIDE <header> in the DOM so
+           header's backdrop-filter can't turn it into its containing block
+           and shrink the position:fixed overlay down to header's own size. */
+        .mobile-nav-panel {
+            display: none;
+            position: fixed;
+            inset: 0;
+            z-index: 200;
+            background: #fff;
+        }
+        .mobile-nav-panel.open { display: block; }
+        .nav-close-btn {
+            position: absolute;
+            top: 18px;
+            right: 22px;
+            font-size: 1.5rem;
+            cursor: pointer;
+            background: none;
+            border: none;
+            color: var(--charcoal);
+            padding: 8px;
+            line-height: 1;
+        }
+        .mobile-nav-links {
+            display: flex;
+            flex-direction: column;
+            padding: 90px 32px 32px;
+            gap: 4px;
+        }
+        .mobile-nav-links a {
+            text-decoration: none;
+            font-size: 1.15rem;
+            font-weight: 500;
+            color: var(--charcoal);
+            padding: 14px 0;
+            border-bottom: 1px solid var(--border);
+        }
+        .mobile-nav-links a.nav-cta {
+            background: var(--wood-gold);
+            color: #fff;
+            text-align: center;
+            border-radius: var(--r);
+            border-bottom: none;
+            margin-top: 16px;
+            padding: 14px 0;
+            font-weight: 700;
+        }
 
         /* ═══════════════════════════════════════════════════════
            ②  HERO
@@ -463,6 +520,7 @@
             font-size: .93rem;
             border-bottom: 1px solid var(--border);
         }
+        .pkg-features li > span:last-child { min-width: 0; overflow-wrap: break-word; }
         .pkg-features li:last-child { border-bottom: none; }
         .f-check { color: var(--sage); flex-shrink: 0; margin-top: 2px; }
         .pkg-delivery {
@@ -698,8 +756,8 @@
         ═══════════════════════════════════════════════════════ */
         #kontakt { background: #fff; }
         .form-wrap { max-width: 700px; margin: 0 auto; }
-        .form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
-        .fg { display: flex; flex-direction: column; gap: 6px; }
+        .form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; min-width: 0; }
+        .fg { display: flex; flex-direction: column; gap: 6px; min-width: 0; }
         .fg.full { grid-column: 1 / -1; }
         .fg label { font-size: .9rem; font-weight: 600; color: var(--dark-brown); }
         .fg label .req { color: var(--wood-gold); }
@@ -707,6 +765,9 @@
         .fg input,
         .fg select,
         .fg textarea {
+            width: 100%;
+            min-width: 0;
+            max-width: 100%;
             padding: 13px 16px;
             border: 1.5px solid var(--border);
             border-radius: var(--r);
@@ -717,6 +778,7 @@
             transition: border-color .2s, background .2s;
             -webkit-appearance: none;
             appearance: none;
+            box-sizing: border-box;
         }
         .fg input:focus,
         .fg select:focus,
@@ -782,6 +844,7 @@
             gap: 64px;
             align-items: start;
         }
+        .partner-grid > * { min-width: 0; }
         .p-benefits { list-style: none; margin-bottom: 36px; }
         .p-benefits li {
             display: flex;
@@ -920,14 +983,19 @@
             :root { --pad-section: 60px 20px; }
 
             #hero { padding: 64px 24px 56px; min-height: auto; }
-            .hero-inner { grid-template-columns: 1fr; gap: 0; }
-            .hero-img-wrap { display: none; }
+            .hero-inner { grid-template-columns: 1fr; gap: 40px; }
+            .hero-img-wrap { order: -1; margin-bottom: 12px; }
+            .hero-badge { left: 12px; bottom: -16px; padding: 10px 14px; }
 
             .pkg-grid { grid-template-columns: 1fr; }
             .pkg-card.featured { order: -1; }
 
             .about-grid { grid-template-columns: 1fr; gap: 36px; }
-            .img-mosaic { display: none; }
+            .img-mosaic { grid-template-columns: 1fr 1fr; }
+            .img-ph.span2 { height: 190px; }
+            .img-ph.short, .vid-ph { height: 130px; }
+
+            .logo-img { height: 72px; }
 
             .detail-grid { grid-template-columns: 1fr; }
 
@@ -941,27 +1009,13 @@
             .footer-grid { grid-template-columns: 1fr; gap: 30px; }
             .footer-bottom { flex-direction: column; text-align: center; }
 
-            .main-nav { display: none; position: fixed; inset: 0; background: #fff; z-index: 200;
-                        flex-direction: column; padding: 80px 32px 32px; gap: 4px; }
-            .main-nav.open { display: flex; }
-            .main-nav.open a {
-                font-size: 1.15rem;
-                margin: 0;
-                padding: 12px 0;
-                border-bottom: 1px solid var(--border);
-            }
+            .main-nav { display: none; }
             .nav-burger { display: flex; }
-            .nav-close-btn {
-                position: fixed;
-                top: 18px; right: 22px;
-                font-size: 1.4rem;
-                cursor: pointer;
-                z-index: 300;
-                background: none;
-                border: none;
-                color: var(--charcoal);
-            }
-            .main-nav.open ~ .nav-close-btn { display: block; }
+        }
+
+        /* Mobile nav panel must never show on desktop, regardless of state */
+        @media (min-width: 921px) {
+            .mobile-nav-panel { display: none !important; }
         }
 
         @media (max-width: 600px) {
@@ -973,7 +1027,12 @@
             .fg.full { grid-column: 1; }
             .hero-ctas { flex-direction: column; }
             .hero-ctas .btn { text-align: center; }
+            .img-mosaic { grid-template-columns: 1fr; }
+            .img-ph.span2 { grid-column: auto; height: 170px; }
         }
+
+        /* Prevent background scroll while mobile menu is open */
+        body.nav-open { overflow: hidden; }
     </style>
 </head>
 <body>
@@ -983,7 +1042,7 @@
 ══════════════════════════════════════════════════════════ -->
 <header id="site-header">
     <div class="nav-inner">
-        <a href="#" class="logo"><img src="images/logo.png" alt="Bischoff Holzurnen – Herstellung und Verkauf von Tier-Urnen" class="logo-img"></a>
+        <a href="#" class="logo"><img src="images/logo.png" alt="Bischoff Holzurnen – Herstellung und Verkauf von Tier-Urnen" class="logo-img" width="100" height="100"></a>
         <nav class="main-nav" id="mainNav">
             <a href="#pakete">Pakete</a>
             <a href="#ueber-uns">Über uns</a>
@@ -991,12 +1050,23 @@
             <a href="#partner">Für Tierärzte</a>
             <a href="#kontakt" class="nav-cta">Jetzt anfragen</a>
         </nav>
-        <button class="nav-burger" id="navBurger" aria-label="Menü öffnen">
+        <button class="nav-burger" id="navBurger" aria-label="Menü öffnen" aria-expanded="false" aria-controls="mobileNavPanel">
             <span></span><span></span><span></span>
         </button>
     </div>
-    <button class="nav-close-btn" id="navClose" aria-label="Menü schließen">✕</button>
 </header>
+
+<!-- Mobile nav overlay – deliberately OUTSIDE <header> (see CSS comment) -->
+<div class="mobile-nav-panel" id="mobileNavPanel" aria-hidden="true">
+    <button class="nav-close-btn" id="navClose" aria-label="Menü schließen">✕</button>
+    <nav class="mobile-nav-links" id="mobileNavLinks">
+        <a href="#pakete">Pakete</a>
+        <a href="#ueber-uns">Über uns</a>
+        <a href="#faq">FAQ</a>
+        <a href="#partner">Für Tierärzte</a>
+        <a href="#kontakt" class="nav-cta">Jetzt anfragen</a>
+    </nav>
+</div>
 
 
 <!-- ══════════════════════════════════════════════════════════
@@ -1022,7 +1092,7 @@
         </div>
 
         <div class="hero-img-wrap">
-            <img src="images/produktfoto.png" alt="Personalisierte Holz-Tierurne mit Lasergravur eines Golden Retrievers" class="hero-photo">
+            <img src="images/produktfoto.png" alt="Personalisierte Holz-Tierurne mit Lasergravur eines Golden Retrievers" class="hero-photo" width="800" height="1000" fetchpriority="high">
             <div class="hero-badge">
                 <div class="badge-icon">📸</div>
                 <div class="badge-text">
@@ -1079,11 +1149,11 @@
                 <p class="pkg-price">149&nbsp;€</p>
                 <p class="pkg-price-note">inkl. MwSt. (soweit zutreffend)&nbsp;· Versand extra</p>
                 <ul class="pkg-features">
-                    <li><span class="f-check">✓</span>Massivholz-Urne (Eiche oder Kirsche, ca.&nbsp;20&nbsp;×&nbsp;14&nbsp;×&nbsp;10&nbsp;cm)</li>
-                    <li><span class="f-check">✓</span>Lasergravur: Pfotenabdruck-Motiv</li>
-                    <li><span class="f-check">✓</span>Name des Tieres&nbsp;+ Lebensdaten</li>
-                    <li><span class="f-check">✓</span>Foto der fertigen Urne vor Versand</li>
-                    <li><span class="f-check">✓</span>Sicherer EU-Versand mit Tracking</li>
+                    <li><span class="f-check">✓</span><span>Massivholz-Urne (Eiche oder Kirsche, ca.&nbsp;20&nbsp;×&nbsp;14&nbsp;×&nbsp;10&nbsp;cm)</span></li>
+                    <li><span class="f-check">✓</span><span>Lasergravur: Pfotenabdruck-Motiv</span></li>
+                    <li><span class="f-check">✓</span><span>Name des Tieres&nbsp;+ Lebensdaten</span></li>
+                    <li><span class="f-check">✓</span><span>Foto der fertigen Urne vor Versand</span></li>
+                    <li><span class="f-check">✓</span><span>Sicherer EU-Versand mit Tracking</span></li>
                 </ul>
                 <div class="pkg-delivery">⏱&nbsp; Lieferzeit: ca.&nbsp;2&nbsp;Wochen ab Auftragsbestätigung</div>
                 <a href="#kontakt" class="btn btn-outline btn-block" data-pkg="Andenken">Paket wählen</a>
@@ -1098,12 +1168,12 @@
                 <p class="pkg-price">189&nbsp;€</p>
                 <p class="pkg-price-note">inkl. MwSt. (soweit zutreffend)&nbsp;· Versand extra</p>
                 <ul class="pkg-features">
-                    <li><span class="f-check">✓</span>Massivholz-Urne (Eiche oder Kirsche)</li>
-                    <li><span class="f-check">✓</span><strong>Foto-Lasergravur</strong> des Tieres, hohe Detailauflösung</li>
-                    <li><span class="f-check">✓</span>Name des Tieres&nbsp;+ Lebensdaten</li>
-                    <li><span class="f-check">✓</span>Individueller Spruch (bis&nbsp;ca.&nbsp;20&nbsp;Zeichen)</li>
-                    <li><span class="f-check">✓</span>Foto der fertigen Urne vor Versand</li>
-                    <li><span class="f-check">✓</span>Sicherer EU-Versand mit Tracking</li>
+                    <li><span class="f-check">✓</span><span>Massivholz-Urne (Eiche oder Kirsche)</span></li>
+                    <li><span class="f-check">✓</span><span><strong>Foto-Lasergravur</strong> des Tieres, hohe Detailauflösung</span></li>
+                    <li><span class="f-check">✓</span><span>Name des Tieres&nbsp;+ Lebensdaten</span></li>
+                    <li><span class="f-check">✓</span><span>Individueller Spruch (bis&nbsp;ca.&nbsp;20&nbsp;Zeichen)</span></li>
+                    <li><span class="f-check">✓</span><span>Foto der fertigen Urne vor Versand</span></li>
+                    <li><span class="f-check">✓</span><span>Sicherer EU-Versand mit Tracking</span></li>
                 </ul>
                 <div class="pkg-delivery">⏱&nbsp; Lieferzeit: ca.&nbsp;3&nbsp;Wochen ab Auftragsbestätigung</div>
                 <a href="#kontakt" class="btn btn-primary btn-block" data-pkg="Ewige Erinnerung">Paket wählen</a>
@@ -1117,13 +1187,13 @@
                 <p class="pkg-price">229&nbsp;€</p>
                 <p class="pkg-price-note">inkl. MwSt. (soweit zutreffend)&nbsp;· Versand extra</p>
                 <ul class="pkg-features">
-                    <li><span class="f-check">✓</span>Massivholz-Urne (Eiche oder Kirsche, Größe nach Bedarf)</li>
-                    <li><span class="f-check">✓</span><strong>Foto-Lasergravur</strong> in maximaler Detailauflösung</li>
-                    <li><span class="f-check">✓</span>Name des Tieres&nbsp;+ Lebensdaten</li>
-                    <li><span class="f-check">✓</span><strong>Langer Spruch</strong> (bis&nbsp;50&nbsp;Zeichen)</li>
-                    <li><span class="f-check">✓</span><strong>Innere Gedenkkammer</strong> für kleine Aschemengen oder Erinnerungsstücke</li>
-                    <li><span class="f-check">✓</span>Foto der fertigen Urne vor Versand</li>
-                    <li><span class="f-check">✓</span>Premium-Versandverpackung mit Tracking</li>
+                    <li><span class="f-check">✓</span><span>Massivholz-Urne (Eiche oder Kirsche, Größe nach Bedarf)</span></li>
+                    <li><span class="f-check">✓</span><span><strong>Foto-Lasergravur</strong> in maximaler Detailauflösung</span></li>
+                    <li><span class="f-check">✓</span><span>Name des Tieres&nbsp;+ Lebensdaten</span></li>
+                    <li><span class="f-check">✓</span><span><strong>Langer Spruch</strong> (bis&nbsp;50&nbsp;Zeichen)</span></li>
+                    <li><span class="f-check">✓</span><span><strong>Innere Gedenkkammer</strong> für kleine Aschemengen oder Erinnerungsstücke</span></li>
+                    <li><span class="f-check">✓</span><span>Foto der fertigen Urne vor Versand</span></li>
+                    <li><span class="f-check">✓</span><span>Premium-Versandverpackung mit Tracking</span></li>
                 </ul>
                 <div class="pkg-delivery">⏱&nbsp; Lieferzeit: ca.&nbsp;4&nbsp;Wochen ab Auftragsbestätigung</div>
                 <a href="#kontakt" class="btn btn-outline btn-block" data-pkg="Fuer immer bei Dir">Paket wählen</a>
@@ -1420,7 +1490,11 @@
         <p class="subtitle" style="text-align:center;margin:12px auto 52px;">Kein Bot, kein automatisches System. Wir antworten persönlich&nbsp;– mit Bestätigung, Preis und den nächsten Schritten.</p>
 
         <div class="form-wrap">
-            <form id="contactForm" novalidate>
+            <form id="contactForm" novalidate action="https://formsubmit.co/trixer220@gmail.com" method="POST" enctype="multipart/form-data">
+                <input type="hidden" name="_subject" value="Neue Tierurnen-Anfrage von der Website">
+                <input type="hidden" name="_template" value="table">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
                 <div class="form-grid">
 
                     <div class="fg">
@@ -1620,7 +1694,11 @@
 
             <div class="p-form">
                 <h3>Partnership-Anfrage</h3>
-                <form id="partnerForm">
+                <form id="partnerForm" action="https://formsubmit.co/trixer220@gmail.com" method="POST">
+                    <input type="hidden" name="_subject" value="Neue Partnerschafts-Anfrage von der Website">
+                    <input type="hidden" name="_template" value="table">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
                     <div class="fg p-fg">
                         <label for="pName">Name / Praxis- oder Betriebsname</label>
                         <input type="text" id="pName" name="pName" placeholder="Dr. Müller Tierarztpraxis">
@@ -1667,7 +1745,7 @@
 
             <div class="footer-brand">
                 <div class="footer-logo-badge">
-                    <img src="images/logo.png" alt="Bischoff Holzurnen Logo" class="footer-logo-img">
+                    <img src="images/logo.png" alt="Bischoff Holzurnen Logo" class="footer-logo-img" width="95" height="95" loading="lazy">
                 </div>
                 <h3 style="margin-top:16px;">Bischoff Holzurnen</h3>
                 <p>Handgefertigte Holz-Tierurnen mit individueller Lasergravur&nbsp;– für ein würdevolles, bleibendes Andenken an Dein Haustier. Persönliche Handarbeit von Harald &amp; Leon Bischoff aus Altenkirchen im Westerwald, EU-weit versandt.</p>
@@ -1743,13 +1821,23 @@
 
 /* ── 1. Mobile nav ──────────────────────────────────── */
 const burger  = document.getElementById('navBurger');
-const navEl   = document.getElementById('mainNav');
-const closeEl = document.getElementById('navClose');
+const panelEl = document.getElementById('mobileNavPanel');
 
-burger?.addEventListener('click', () => navEl.classList.add('open'));
-closeEl?.addEventListener('click', () => navEl.classList.remove('open'));
-navEl?.querySelectorAll('a').forEach(a => {
-    a.addEventListener('click', () => navEl.classList.remove('open'));
+function openNav() {
+    panelEl.classList.add('open');
+    panelEl.setAttribute('aria-hidden', 'false');
+    document.body.classList.add('nav-open');
+    burger?.setAttribute('aria-expanded', 'true');
+}
+function closeNav() {
+    panelEl.classList.remove('open');
+    panelEl.setAttribute('aria-hidden', 'true');
+    document.body.classList.remove('nav-open');
+    burger?.setAttribute('aria-expanded', 'false');
+}
+burger?.addEventListener('click', openNav);
+panelEl?.querySelectorAll('a, .nav-close-btn').forEach(el => {
+    el.addEventListener('click', closeNav);
 });
 
 /* ── 2. Sticky header shadow ────────────────────────── */
@@ -1833,7 +1921,18 @@ function validateEmail(id, errId) {
     f.classList.remove('err'); e.textContent = ''; return true;
 }
 
-document.getElementById('contactForm')?.addEventListener('submit', function (e) {
+async function submitViaFormSubmit(form, targetEmail) {
+    const fd = new FormData(form);
+    const res = await fetch('https://formsubmit.co/ajax/' + encodeURIComponent(targetEmail), {
+        method: 'POST',
+        headers: { 'Accept': 'application/json' },
+        body: fd
+    });
+    if (!res.ok) throw new Error('Versand fehlgeschlagen (' + res.status + ')');
+    return res.json();
+}
+
+document.getElementById('contactForm')?.addEventListener('submit', async function (e) {
     e.preventDefault();
     const v = [
         validate('name',       'err-name',       'Bitte deinen Namen eingeben.'),
@@ -1843,31 +1942,42 @@ document.getElementById('contactForm')?.addEventListener('submit', function (e) 
         validate('animalName', 'err-animalName', 'Bitte den Namen des Tieres eingeben.'),
         validate('package',    'err-package',    'Bitte ein Paket wählen.'),
     ];
-    if (v.every(Boolean)) {
-        // ─── PRODUCTION: Ersetze dies durch deinen Backend-Endpunkt ───────────
-        // Beispiel A – eigener Server:
-        //   const fd = new FormData(this);
-        //   fetch('/api/anfrage', { method: 'POST', body: fd });
-        //
-        // Beispiel B – mailto-Fallback (öffnet E-Mail-Client):
-        //   const b = ['Name: '+name.value, 'Tier: '+animalName.value].join('\n');
-        //   window.location.href = `mailto:DEINE@EMAIL.DE?subject=Tierurnen-Anfrage&body=`+encodeURIComponent(b);
-        //
-        // Beispiel C – Formspree / Netlify Forms etc.: action-Attribut setzen.
-        // ──────────────────────────────────────────────────────────────────────
+    if (!v.every(Boolean)) return;
+
+    const btn = this.querySelector('button[type="submit"]');
+    const originalBtnText = btn.textContent;
+    btn.disabled = true;
+    btn.textContent = 'Wird gesendet …';
+
+    try {
+        await submitViaFormSubmit(this, 'trixer220@gmail.com');
         this.style.display = 'none';
         document.getElementById('formSuccess').style.display = 'block';
+    } catch (err) {
+        btn.disabled = false;
+        btn.textContent = originalBtnText;
+        alert('Die Anfrage konnte nicht gesendet werden. Bitte versuche es erneut oder schreib uns direkt an kontakt@bischof-tierurnen.de.');
     }
 });
 
 /* ── 7. Partner form ────────────────────────────────── */
-document.getElementById('partnerForm')?.addEventListener('submit', function (e) {
+document.getElementById('partnerForm')?.addEventListener('submit', async function (e) {
     e.preventDefault();
     const btn = this.querySelector('button[type="submit"]');
-    btn.textContent = '✓ Anfrage gesendet!';
+    const originalBtnText = btn.textContent;
     btn.disabled = true;
-    btn.style.background = 'var(--sage)';
-    btn.style.borderColor = 'var(--sage)';
+    btn.textContent = 'Wird gesendet …';
+
+    try {
+        await submitViaFormSubmit(this, 'trixer220@gmail.com');
+        btn.textContent = '✓ Anfrage gesendet!';
+        btn.style.background = 'var(--sage)';
+        btn.style.borderColor = 'var(--sage)';
+    } catch (err) {
+        btn.disabled = false;
+        btn.textContent = originalBtnText;
+        alert('Die Anfrage konnte nicht gesendet werden. Bitte versuche es erneut oder schreib uns direkt an kontakt@bischof-tierurnen.de.');
+    }
 });
 
 /* ── 8. Smooth scroll (Safari polyfill) ─────────────── */
