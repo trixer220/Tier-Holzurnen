@@ -1,28 +1,125 @@
-# Bischoff Holzurnen – Projektstatus & Dokumentation
+# Bischof Holzurnen (Tierurnen) – Projekt-Hub
 
-## 🎯 Projektübersicht
-**Produkt:** Handgefertigte Holz-Tierurnen mit individueller Lasergravur  
-**Zielmarkt:** Europa (primär DE/AT/CH)  
-**Aktuelle Phase:** Landing Page ✓ | Nächste Phase: Etsy-Integration  
-**Team:** Harald & Leon Bischoff (Handwerk) + Digitale Unterstützung
+## ⚠️ Quellenpriorität – zuerst lesen
+
+Dieses Projekt hat zwei Arten von Dokumenten mit **unterschiedlicher Verbindlichkeit**:
+
+1. **`Strategieanalyse_Tierurnen.md`** + **`Projektstatus_Tierurnen_Update.md`**
+   → **Einzige verbindliche Quelle für Fakten.** Enthalten die tatsächliche Geschäfts-, Preis- und Rechtsstrategie, entstanden aus echter Diskussion mit Marktrecherche.
+   → ⚠️ **Diese beiden Dateien liegen bewusst NICHT auf GitHub** (Repo ist öffentlich, Dateien enthalten sensible Kosten-/Familien-/Provisionsdetails; siehe `.gitignore`). Sie sind trotzdem für jede Session verfügbar:
+     - **Claude Code:** lokal lesbar unter `D:\Benutzer\Leon\Strategieanalyse_Tierurnen.md` und `D:\Benutzer\Leon\Projektstatus_Tierurnen_Update.md` (Original) sowie als lokale, nicht-versionierte Kopie direkt in diesem Repo-Ordner. **Falls diese Dateien in einer neuen Session nicht auffindbar sind: aktiv beim Nutzer nachfragen, nicht raten oder auf die Landing Page zurückfallen.**
+     - **claude.ai-Chats (Normal/Cowork):** über das Projektwissen des claude.ai-Projekts hinterlegt.
+2. **`index.html`** (Landing Page)
+   → **Reiner technischer Testlauf, kein Inhalts-Beleg.** Diente ausschließlich dazu, in Claude Code das Mobile-/Desktop-Layout (Header, Formulare, Responsive-Verhalten) zu reparieren. Die *inhaltlichen* Angaben darin (Preise 149/189/229 €, feste 3-Pakete-Struktur, Firmenname-Schreibweise, Rechtsform-Hinweise im Footer, Lieferzeiten) sind **nicht bloß veraltet, sondern größtenteils frei erfunden bzw. stammen aus einem überholten, nie verifizierten ChatGPT-Plan**. Manche Angaben haben zufällig einen Hauch von Wahrheit, das macht sie aber nicht verlässlich – im Zweifel gilt: erfunden, bis durch Strategieanalyse/Projektstatus bestätigt.
+
+**Faustregel:** Landing-Page-Inhalte fließen **niemals** in Strategieanalyse/Projektstatus ein und werden nicht als Beleg für irgendeine Tatsachenbehauptung zum Geschäft verwendet – auch nicht auszugsweise oder "vorsichtig". Bei jedem Widerspruch gilt ausschließlich, was in Strategieanalyse/Projektstatus steht. Aus der Landing Page ist einzig ihre *Technik* (Mobile-Responsive, Formular-Backend, Header-Struktur) wiederverwendbar – ihr *Text* ist wertlos als Informationsquelle.
 
 ---
 
-## 📊 Aktueller Status
+## 🎯 Projektübersicht
 
-### ✅ Abgeschlossen (Landing Page)
-- **Datei:** `index.html` (Single-Page, vollständig self-contained)
-- **Struktur:** Header + Hero + Pakete (3 Tier) + About + Details + Prozess + FAQ + Kontaktformular + Partner-Section + Footer
-- **Mobile:** Responsive (375px–1280px+), Header neu gebaut, Formularfelder optimiert
-- **Formular:** Echtversand über FormSubmit.co → trixer220@gmail.com
-- **Deployment:** Lokal lauffähig, ReadyToHostAnywhereHTML
+**Produkt:** Handgefertigte Holz-Tierurnen mit Lasergravur (Strichzeichnung/Linien-Gravur eines Tierporträts + Name + kurzer Spruch)
+**Firma:** Läuft in der Startphase über die **bestehende Firma des Vaters** ("Bischof Holzurnen" – Schreibweise laut Projektstatus, Landing Page verwendet abweichend "Bischoff"; muss noch vereinheitlicht werden)
+**Team:** Vater (Fertigung/Werkstatt) + Leon (Digitales, Vertrieb) – Sohn arbeitet provisionsbasiert, noch kein eigenes Gewerbe
+**Verkaufskanal (geplant):** Etsy, EU-weiter Versand, Werbefokus DACH + Benelux + Frankreich + Nordics
+**Aktuelle Phase:** Vorbereitung Etsy-Testlaunch (siehe Projektstatus Abschnitt 6 "Offene nächste Schritte")
 
-### 🔄 In Arbeit / Feedback
-- Viewport-Meta-Tag ggf. noch anpassen (Pinch-Zoom deaktivieren, wenn gewünscht)
-- Impressum-Platzhalter noch ausfüllen: `[Straße Nr.]`, `[PLZ]`, Etsy-Shop-Link
+---
 
-### ⏭️ Nächste Phase: Etsy-Integration
-Siehe Roadmap unten.
+## 💰 Preis- & Geschäftslogik (verbindlich, aus Strategieanalyse)
+
+- **Kein fixer Zielpreis.** Preiskorridor 150–220 €, Strategie: Preis so lange schrittweise anheben, bis sich ein leichter Wartevorlauf (1–3 Wochen) bildet. Ziel ist **Preis-Maximierung, nicht Stückzahl-Maximierung**.
+  → Die auf der Landing Page verwendeten fixen Paketpreise (149 € / 189 € / 229 €) sind ein **Platzhalter aus dem alten Plan**, keine finale Entscheidung.
+- **Kapazität:** 30 Urnen/Monat als angenommene Obergrenze (aus altem Plan übernommen, in Strategieanalyse als Rahmenbedingung akzeptiert – ökonomisch aber fast irrelevant, solange Nachfrage darunterliegt).
+- **Aktueller Lagerstand:** ~5 vorproduzierte, unbearbeitete Rohlinge. Gravur erfolgt erst nach Bestellung. Verfügbarkeitsangabe im Etsy-Listing = echte Stückzahl (aktuell 5), **keine künstliche Verknappung**.
+- **Stückkosten:** 50 € Materialkosten pro Urne (Zahlung an den Vater).
+- **Etsy-Gebühren:** realistisch 12–17 % vom Bruttopreis (6,5 % Transaktionsgebühr, ~4 %+0,30€ Zahlungsabwicklung, 0,20 $ Listinggebühr, 19 % MwSt. auf Gebühren). Offsite-Ads-Gebühr (12–15 %) wird **verpflichtend ab ~10.000 $ Jahresumsatz** – fest einkalkulieren.
+
+---
+
+## 🧭 Positionierung & Anti-Manipulation-Prinzip (verbindlich)
+
+**Bewusste Entscheidung GEGEN gängige Etsy-Verkaufstricks** (recherchiert bei Bestsellern wie PiecesOfHearts: künstliche Rabatte 30–50 %, Fake-Verknappung "nur noch 2 Stück", Warenkorb-Zähler, Lockpreise ab ~30 € die nach Personalisierung auf 100–175 € steigen):
+
+- Passt nicht zur Positionierung als "würdevolles, vertrauensbasiertes Erinnerungsprodukt"
+- Stattdessen: **ehrliche Verfügbarkeitsangabe**, Vertrauen über echte Vorteile statt Kaufdruck
+
+**Echte (nicht-manipulative) Wettbewerbsvorteile, die aktiv kommuniziert werden sollen:**
+1. **Versandbereitschaft 1–3 Tage** – Etsy-Filter, den viele Konkurrenten (Übersee-Versand, lange Lieferzeiten) nicht erfüllen; machbar, weil Rohlinge vorproduziert sind
+2. **1:1-Kundenbetreuung** – Vorschau des gravierten Motivs per WhatsApp/E-Mail vor finalem Versand
+3. **Echte Handwerksgeschichte** – Vater-Sohn-Betrieb, jedes Stück ein Unikat, keine CNC-Massenfertigung
+
+**Markentrennung empfohlen:** Falls der Vater bereits Menschen-Urnen herstellt, sollte die Tierurnen-Linie einen eigenen, klar abgegrenzten Markenauftritt bekommen (Zielgruppe möchte nicht im selben Shop wie humane Bestattungsprodukte landen).
+
+---
+
+## 🪵 Produkt: Gravur-Machbarkeit (verbindlich)
+
+| Stil | Status | Einsatz |
+|------|--------|---------|
+| **Strichzeichnung/Linien-Gravur** (Name + Spruch, z.B. "Rocky"-Referenz) | ✅ Getestet, funktioniert gut | **Basis-Modell für den Start** |
+| Fotorealistische Halbton-Gravur (Graustufen, Fell-Textur) | ⏳ Technisch anspruchsvoller, noch nicht ausprobiert | Mögliches Premium-Upgrade später |
+| Gravur + Epoxidharz-Guss (Wellen-/Schaum-Optik) | ❌ Eigenständiges Zusatzhandwerk | Nicht Teil des Kernangebots |
+
+→ **Die Landing Page bewirbt aktuell "Foto-Lasergravur in hoher Detailauflösung" als Standard-Feature ab Paket 2** – das entspricht laut Projektstatus **nicht** dem tatsächlich getesteten/wirtschaftlich sauberen Basis-Modell (Strichzeichnung). Muss vor Etsy-Launch korrigiert werden.
+
+---
+
+## ⚖️ Rechtlich/Steuerlich (verbindlich, Stand Projektstatus)
+
+- **Start läuft über die bestehende Firma des Vaters**, nicht über ein eigenes Kleingewerbe von Leon.
+- Zahlungen laufen komplett auf das Konto des Vaters; Leons Vergütung ist **provisionsbasiert**, wird erst bei nachgewiesenem Erfolg abgeführt.
+- Vorteil: kein administrativer Overhead in der Testphase (keine Gewerbeanmeldung, keine eigene Steuerpflicht).
+- **Offen für später** (bei Erfolg): Trennung der Buchhaltung, schriftliche Provisionsregelung mit Vater, ggf. eigenes Gewerbe + KU-ID für EU-Kleinunternehmerregelung (ermöglicht seit 1.1.2025 EU-weiten umsatzsteuerfreien Verkauf ohne OSS-Verfahren, solange EU-Jahresumsatz < 100.000 € und Vorjahresumsatz DE < 25.000 €).
+- ⚠️ Realistischer Jahresumsatz bei Erfolg (30.000–65.000 €) reißt die 25.000-€-Grenze ohnehin – Kleinunternehmerstatus geht dann im 2. Jahr automatisch verloren, unabhängig von der Geografie.
+- **Unbedingt mit Steuerberater final abklären**, besonders zur Abgrenzung zwischen Vaters bestehendem Betrieb und Leons eigenem Verkaufsanteil.
+
+→ **Die Landing Page enthält im Footer aktuell einen Kleinunternehmer-Steuerhinweis unter "Harald Bischoff" als eigenständigem Unternehmer** – das widerspricht der aktuellen Struktur (Verkauf läuft über Vaters bestehende Firma). Muss vor Launch korrigiert oder mit dem tatsächlichen Firmennamen/Inhaber abgeglichen werden.
+
+---
+
+## 🌍 Markttest-Strategie (verbindlich)
+
+- **Kanal:** Etsy, EU-weiter Versand von Anfang an (nicht auf Deutschland beschränken – Kaltstart-Problem bei Nischenprodukt + hohem Preis + unbekanntem Shop erfordert maximale Sichtbarkeit)
+- **Werbefokus:** DACH + Benelux + Frankreich + Nordics (Kulturen mit "Haustier als Familienmitglied"); Süd-/Osteuropa nicht aktiv bewerben, aber über Etsy-Suche sichtbar lassen
+- **Beobachtungszeitraum:** 60–90 Tage (nicht 30 – neue Etsy-Shops haben in den ersten Wochen kaum organische Sichtbarkeit, Trauerkäufe sind oft nicht impulsiv)
+- **Erfolgsmetrik:** Trichter-Kennzahlen (Impressionen, Klickrate, Anteil Favoriten) statt roher Verkaufszahlen – bei so kleinen Stückzahlen sind 1–3 Verkäufe/Monat kaum von Zufall zu unterscheiden
+- **Ergänzender Kanal (parallel zu Etsy):** Partnerschaften mit lokalen Tierarztpraxen/Tierkrematorien (warme, akute Nachfrage) + schlanke eigene Ein-Seiten-Website als gebührenfreier Kanal
+- **Amazon Handmade:** explizit nicht empfohlen (Käuferschaft passt nicht zur emotionalen/handwerklichen Positionierung)
+
+---
+
+## 📋 Offene nächste Schritte (aus Projektstatus, Abschnitt 6 – aktuell gültig)
+
+1. [ ] Erstes Referenzfoto (z. B. freies Stockfoto eines Hundes) als Gravurvorlage in Strichzeichnung-Stil auswählen
+2. [ ] Testgravur auf einem der 5 Rohlinge durchführen, Zeitaufwand + optische Qualität prüfen
+3. [ ] Echte Produktfotos (keine KI-generierten!) von fertigen Testmodellen anfertigen
+4. [ ] Etsy-Listing-Text erstellen: Fokus auf Handwerk/Familienbetrieb, 1–3 Tage Versandbereitschaft, persönliche Vorschau-Option, ehrliche Verfügbarkeitsangabe
+5. [ ] Abrechnungsmodalität mit dem Vater (Provision, Auszahlungszeitpunkt) schriftlich grob festhalten
+
+**Für Details zum Etsy-Prozess siehe [`ETSY_INTEGRATION.md`](ETSY_INTEGRATION.md)** — dort aber ebenfalls beachten: Alles zu Festpreisen/3-Paketen dort ist als **Platzhalter/Vorschlag** zu verstehen, keine getroffene Entscheidung. Die eigentliche Preisstrategie ist "dynamisch hochtesten", siehe oben.
+
+---
+
+## 🖥️ Landing Page – Status (nur Testlauf, siehe Warnung oben)
+
+**Datei:** `index.html` (Single-File, self-contained HTML/CSS/JS)
+
+### Was technisch brauchbar ist:
+- Mobile-responsive Grundgerüst (Header/Nav, Formulare, Karten-Layouts)
+- Kontaktformular-Versand über FormSubmit.co (technisch funktionsfähig, Zieladresse aktuell `trixer220@gmail.com` – **muss vor echtem Launch auf die tatsächliche Geschäfts-E-Mail geändert werden**)
+- Grundstruktur (Hero, Pakete, Über uns, Details, Ablauf, FAQ, Kontakt, Partner, Footer)
+
+### Was inhaltlich frei erfunden ist und komplett zu ignorieren ist:
+- ❌ Feste Paketpreise 149/189/229 € — erfunden, keine reale Grundlage
+- ❌ "Foto-Lasergravur in hoher Detailauflösung" als Standard — entspricht nicht dem tatsächlich getesteten Basis-Modell (Strichzeichnung)
+- ❌ Impressum/Steuerhinweis unter eigenständigem "Harald Bischoff"-Unternehmen — erfunden, entspricht nicht der realen Struktur (Verkauf über Vaters bestehende Firma)
+- ❌ Firmenname-Schreibweise "Bischoff" (Projektstatus schreibt "Bischof")
+- ❌ Alle Texte zu Lieferzeiten "2–4 Wochen" — erfunden und direkt gegenteilig zur Realität: Projektstatus nennt **1–3 Tage** Versandbereitschaft als echten Wettbewerbsvorteil, da Rohlinge vorproduziert sind
+
+Diese Punkte sind keine "mit Vorsicht zu genießenden" Altlasten, sondern schlicht falsch. Sie dürfen unter keinen Umständen als Fakt in andere Dokumente (insbesondere nicht in Strategieanalyse/Projektstatus) übernommen werden.
+
+**Empfehlung:** Landing Page inhaltlich erst komplett neu schreiben (Preise offen/dynamisch statt fix, Lieferzeit korrigieren, Rechtsform-Angaben klären), bevor sie live geht. Bis dahin dient sie nur als technische Spielwiese für Layout-Fragen.
 
 ---
 
@@ -30,76 +127,10 @@ Siehe Roadmap unten.
 
 | Layer | Tech | Notes |
 |-------|------|-------|
-| **Frontend** | HTML5 + inline CSS + Vanilla JS | Single file, no build step |
+| **Frontend** | HTML5 + inline CSS + Vanilla JS | Single file, kein Build-Step |
 | **Formular-Backend** | FormSubmit.co (Free) | E-Mail-Relay, kein eigener Server nötig |
-| **Bilder** | `/images/` (PNG/JPG) | Logo, Produktfotos |
-| **Versionierung** | Git + GitHub | Commit-Message: Co-Authored-By |
-
----
-
-## 📋 Kontakte & Ressourcen
-
-| Was | Wer/Was | Status |
-|-----|---------|--------|
-| **E-Mail** | trixer220@gmail.com | ✓ Formulare gehen hier hin |
-| **Etsy-Shop** | [Link in Footer] | ⏳ noch nicht erstellt |
-| **GitHub** | github.com/trixer220/Tier-Holzurnen | ✓ Aktiv |
-| **Fotos/Assets** | `/images/` im Repo | ✓ Logo, Produktfoto vorhanden |
-
----
-
-## 🗺️ Roadmap: Etsy-Integration
-
-### Phase 1: Etsy-Account & Shop-Setup (1–2 Tage)
-- [ ] Etsy-Shop erstellen (falls noch nicht geschehen)
-- [ ] Bischoff Holzurnen als Shop-Name
-- [ ] Shoprichtlinien, Versandkosten EU-weit konfigurieren
-- [ ] 3 Pakete als separate Listings anlegen
-- [ ] Produktfotos hochladen (die bestehenden aus `/images/`)
-
-**Deliverables:**
-- Etsy-Shop-Link (für Impressum + Footer)
-- Produktlisting-URLs
-
-### Phase 2: Bestellmanagementen-Struktur (2–3 Tage)
-**Ziel:** Bestellungen von Etsy + direkter Website erfassen, ohne Doppelarbeit
-
-**Option A (Simpel):** 
-- Etsy-Bestellungen manuell checken
-- Konfirmations-Email an Kunde
-- Auftrag ins Handwerk übergeben
-- Foto + Versand manuell tracken
-
-**Option B (Semi-Automatisiert):**
-- Etsy-API-Integration (Bestellungen → Google Sheets / Airtable)
-- Automatische Bestätigungsmails via Zapier/Make
-- Dashboard für Harald/Leon (Status: Gravieren, Foto, Versand)
-
-**Option C (Full-Stack):**
-- Etsy-API + eigene Backend-DB (wenn später PostgreSQL aufgesetzt)
-- Inventory sync (max. 30 Urnen/Monat)
-- Automatische Lagererkennung
-
-**Empfehlung:** **Option A starten** (manuell, aber robust), später zu B wechseln wenn Volumen steigt.
-
-**Deliverables:**
-- Prozess-Doku für Bestellabwicklung (Handover Harald → Leon → Versand)
-- Template für Bestätigungsmails
-
-### Phase 3: Website ↔ Etsy Synchronisation (1–2 Tage)
-- Landing-Page zeigt Links zu Etsy (Footer + "Auf Etsy ansehen" Buttons)
-- Etsy-Listings verlinken zurück auf Website (im Listing-Text)
-- Beide kanäle haben identische Produktinfo (Copy-Paste oder CMS später)
-
-**Deliverables:**
-- Etsy-Links in Impressum + Footer
-- Produkttext-Versionskontrolle (Keep-in-sync Checkliste)
-
-### Phase 4: Monitoring & Optimierung (Laufend)
-- Etsy-Analytics anschauen (Views, Conversions, Feedback)
-- Kundenbewertungen sammeln
-- Website basierend auf Etsy-Feedback iterieren
-- Saisonalität tracken (Dez = Weihnachten, Hochkonjunktur?)
+| **Bilder** | `/images/` (PNG/JPG) | Logo, Produktfotos (teils Platzhalter) |
+| **Versionierung** | Git + GitHub | github.com/trixer220/Tier-Holzurnen |
 
 ---
 
@@ -107,79 +138,27 @@ Siehe Roadmap unten.
 
 ```
 .
-├── index.html                 # Landing Page (Single File)
-├── README.md                  # Kurzbeschreibung
-├── CLAUDE.md                  # Diese Datei
-├── .claude/
-│   ├── settings.json          # (Zukünftig: Claude-Code Config)
-│   └── launch.json            # (Zukünftig: Dev-Server Config)
+├── index.html                          # Landing Page (nur Testlauf, siehe Warnung)
+├── CLAUDE.md                           # Diese Datei – zentraler Projekt-Hub
+├── Strategieanalyse_Tierurnen.md       # ⭐ Maßgeblich: Geschäftsstrategie
+├── Projektstatus_Tierurnen_Update.md   # ⭐ Maßgeblich: Aktueller Stand + nächste Schritte
+├── ETSY_INTEGRATION.md                 # Etsy-Playbook (Preise darin = Platzhalter!)
+├── README.md
 ├── images/
-│   ├── logo.png               # Bischoff Logo
-│   ├── produktfoto.png        # Produktfoto (Urne mit Gravur)
-│   └── ...                    # Weitere Assets
-├── .git/                      # Git History
-└── .gitignore                 # (Zukünftig: .env, node_modules, etc.)
+└── .git/
 ```
 
 ---
 
-## 🎨 Design & Brand
+## 🚀 Wie man dieses Projekt fortführt (für neue Sessions)
 
-- **Farben:** Warm-White, Charcoal, Wood-Gold (#8B6334), Sage-Green
-- **Font:** Serif (Georgia) für Headlines, Sans (System) für Body
-- **Ton:** Würdevoll, persönlich, handwerklich (kein Maschinelles)
-- **Logo:** 100px Desktop, 72px Mobile
-
----
-
-## 🔐 Wichtige Beschlüsse & Feedback
-
-### Header/Navigation (Abgeschlossen)
-- **Problem:** Desktop-Menü verschwand nach Mobile-Fix wegen `backdrop-filter` Containing-Block-Bug
-- **Lösung:** Mobile-Menü als separates Overlay-Panel außerhalb `<header>`, Desktop-Nav bleibt fest im Header
-- **Grund:** Saubere Trennung, kein DOM-Verschiebe-Hack
-
-### Formularfelder (Abgeschlossen)
-- **Problem:** Overflow auf Mobile wegen `<strong>` + Text als separate Flex-Items
-- **Lösung:** Alle Listentexte konsequent in `<span>` wrappen, `min-width: 0` auf Grid/Flex
-- **Grund:** Text kann jetzt korrekt umbrechen
-
-### Pinch-Zoom (Offen)
-- Aktuell: Aktiviert (Accessibility)
-- Option: Mit `user-scalable=no` deaktivieren (wenn User Experience dringend nötig)
-- Status: Nach Feedback entscheiden
+1. **Zuerst lesen:** `Strategieanalyse_Tierurnen.md` + `Projektstatus_Tierurnen_Update.md` – das ist die tatsächliche Faktenlage
+2. **Dann:** Diese `CLAUDE.md` für den Überblick und die Konflikt-Liste (was auf der Landing Page falsch ist)
+3. **Landing Page (`index.html`)** nur für rein technische Fragen (Responsive-Verhalten, Formular-Mechanik) als Referenz nutzen – **niemals** ihre Texte/Preise als Fakten übernehmen
+4. Bei Unsicherheit, ob Landing Page oder Strategiedokumente gelten: **Strategiedokumente gewinnen immer**
 
 ---
 
-## 📝 Nächste Schritte (Priorisiert)
-
-1. **[Morgen/Diese Woche]** Etsy-Shop erstellen, 3 Produktlistings anlegen
-2. **[Diese Woche]** Bestellabwicklungs-Prozess dokumentieren (mit Harald klären)
-3. **[Diese Woche]** Impressum-Platzhalter ausfüllen, Etsy-Link hinzufügen
-4. **[Später]** Bei Bedarf: Inventory-Management System (Airtable/Sheets)
-5. **[Später]** Bei Bedarf: Etsy-API für automatische Bestell-Benachrichtigungen
-
----
-
-## 🚀 Wie man dieses Projekt fortführt
-
-### In neuen Claude-Code Sessions:
-1. Lies diese `CLAUDE.md` zuerst (gibt dir alle Kontexte)
-2. Schau ins `.claude/memory/` Verzeichnis für projektspezifische Notes
-3. Sieh dir letzte Git-Commits an (`git log --oneline`)
-
-### Für Änderungen am Code:
-- Arbeite direkt auf `index.html` (Single File, keine Build-Steps)
-- Teste im Browser mit `python -m http.server 8811`
-- Commit mit aussagekräftiger Message + `Co-Authored-By`
-
-### Bei Fragen zum Status:
-- Check `CLAUDE.md` (diese Datei)
-- Check `.claude/memory/` für Context
-- Check GitHub Issues (falls später genutzt)
-
----
-
-**Zuletzt aktualisiert:** 12. Juli 2026  
-**Von:** Claude (Sonnet 5)  
-**Status:** ✓ Landing Page fertig, ⏳ Etsy-Integration in Planung
+**Zuletzt aktualisiert:** 16. Juli 2026
+**Von:** Claude (Sonnet 5)
+**Status:** Strategie-Dokumente ins Repo integriert, Landing Page als "Testlauf, inhaltlich zu überarbeiten" markiert

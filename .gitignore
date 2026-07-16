@@ -1,0 +1,6 @@
+# Interne Strategie-/Geschäftsdokumente – bewusst NICHT auf GitHub (Repo ist öffentlich).
+# Enthalten sensible Details (Kosten, Familien-/Provisionsvereinbarung).
+# Claude Code liest sie direkt von der Festplatte (siehe CLAUDE.md für Pfade).
+# Auch hinterlegt im claude.ai-Projektwissen für Nicht-Code-Chats.
+Strategieanalyse_Tierurnen.md
+Projektstatus_Tierurnen_Update.md
